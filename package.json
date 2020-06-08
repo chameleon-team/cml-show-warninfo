@@ -1,0 +1,22 @@
+{
+  "name": "cml-warn-info",
+  "version": "1.0.0",
+  "description": "A chameleon project",
+  "author": "",
+  "private": true,
+  "scripts": {},
+  "license": "MIT",
+  "dependencies": {
+    "chameleon-api": "1.0.0",
+    "chameleon-runtime": "1.0.1",
+    "chameleon-store": "1.0.1",
+    "chameleon-ui-builtin": "1.0.6",
+    "cml-ui": "1.0.3",
+    "lerna-tool1": "^3.0.0",
+    "lodash": "^4.17.15",
+    "mobx": "^3.6.2"
+  },
+  "devDependencies": {
+    "duplicate-package-checker-webpack-plugin": "^2.1.0"
+  }
+}
