@@ -24,12 +24,12 @@ cml.config.merge({
   },
   web: {
     dev: {
-      analysis: false,
+      analysis: true,
       console: false,
       isWrapComponent: false // 取消默认对组件的包裹
     },
     build: {
-      analysis: false,
+      analysis: true,
       publicPath: `${publicPath}/web/`,
       apiPrefix,
       isWrapComponent: false // 取消默认对组件的包裹

@@ -17,6 +17,10 @@ import lodash from 'lodash';
 import L from 'lerna-tool1'
 ```
 
+打包后我们可以看到会有lodash的不同版本都会被打包进去。
+
+![](./lodash.png)
+
 ### 方案一：升级chameleon-tool
 
 > chameleon-tool@1.0.6-alpha.6 内置支持了检查能力
