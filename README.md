@@ -121,3 +121,5 @@ web端包体积过大如何优化？
 3.针对特定模块进行优化，比如重复的npm包采用 npm dedupe 抹平，注意重复包版本是否兼容
 
 4.理论上`npm dedupe` 会将版本兼容的重复npm包提取出来，而不会提取不兼容的版本
+
+更多理解参考npm官方专门提供的一篇文章[npm3 Duplication](https://npm.github.io/how-npm-works-docs/npm3/duplication.html)
