@@ -14,7 +14,11 @@
     "cml-ui": "1.0.3",
     "lerna-tool1": "^3.0.0",
     "lodash": "^4.17.15",
-    "mobx": "^3.6.2"
+    "mobx": "^3.6.2",
+    "mod-a": "^1.0.0",
+    "mod-c": "^1.0.0",
+    "mod-d": "^1.0.0",
+    "mod-e": "^1.0.0"
   },
   "devDependencies": {
     "duplicate-package-checker-webpack-plugin": "^2.1.0"
