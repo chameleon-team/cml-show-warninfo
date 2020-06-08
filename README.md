@@ -92,8 +92,28 @@ cml.utils.plugin('webpackConfig', function({ type, media, webpackConfig }, cb) {
 
 ### 如何解决依赖同一个npm包的多个版本问题？
 
+[SemVer](https://semver.org/)
+SemVer (Semantic Versioning, 语义化版本).
+
+SemVer最基本的结构是major.minor.patch, 如1.2.3.
+其中,
+
+major为主版本号, 当【有非向后兼容】(即breaking change)的时候, 更新major.
+minor为次版本号, 当【有向后兼容的时候】, 更新minor.
+patch为补丁号, 当【有向后兼容的bug fix时】, 更新patch.
+npm使用SemVer来标注包的版本, 这些配置写入到了package.json中.
+
+除了指定固定的版本号, package.json中还可以指定版本号范围.
+
+1.2.x (x也可以用*代替), 相当于>=1.2.0 <1.3.0
+1.x.x, 相当于>=1.0.0 <2.0.0
+波浪线(Tilde), ~1.2.3相当于>=1.2.3 <1.3.0, 即minor不能增加.
+破折号(Caret), ^1.2.3相当于>=1.2.3 <2.0.0, 即major不能增加.
+
+
 https://docs.npmjs.com/cli/dedupe
 web端包体积过大如何优化？
 1.配置构建bundle分析项，analysis:true
 2.查看各个模块占用大小
 3.针对特定模块进行优化，比如重复的npm包采用 npm dedupe 抹平，注意重复包版本是否兼容
+4.理论上`npm dedupe` 会将版本兼容的重复npm包提取出来，而不会提取不兼容的版本
