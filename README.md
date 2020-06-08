@@ -113,7 +113,11 @@ npm使用SemVer来标注包的版本, 这些配置写入到了package.json中.
 
 https://docs.npmjs.com/cli/dedupe
 web端包体积过大如何优化？
+
 1.配置构建bundle分析项，analysis:true
+
 2.查看各个模块占用大小
+
 3.针对特定模块进行优化，比如重复的npm包采用 npm dedupe 抹平，注意重复包版本是否兼容
+
 4.理论上`npm dedupe` 会将版本兼容的重复npm包提取出来，而不会提取不兼容的版本
