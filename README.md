@@ -85,3 +85,11 @@ cml.utils.plugin('webpackConfig', function({ type, media, webpackConfig }, cb) {
   });
 });
 ```
+
+### 如何解决依赖同一个npm包的多个版本问题？
+
+https://docs.npmjs.com/cli/dedupe
+web端包体积过大如何优化？
+1.配置构建bundle分析项，analysis:true
+2.查看各个模块占用大小
+3.针对特定模块进行优化，比如重复的npm包采用 npm dedupe 抹平，注意重复包版本是否兼容
