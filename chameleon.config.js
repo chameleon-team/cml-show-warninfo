@@ -58,12 +58,14 @@ cml.config.merge({
 cml.utils.plugin('webpackConfig', function({ type, media, webpackConfig }, cb) {
   // cb函数用于设置修改后的配置
   debugger;
-  webpackConfig.plugins.forEach((plugin) => {
-    if(plugin.constructor.name === 'FriendlyErrorsWebpackPlugin'){
-      plugin.showWarning = true;
-    }
-  });
-  webpackConfig.plugins.push(new DuplicatePackageCheckerPlugin())
+  if(media === 'dev'){ //开发阶段引入警告提示
+    webpackConfig.plugins.forEach((plugin) => {
+      if(plugin.constructor.name === 'FriendlyErrorsWebpackPlugin'){
+        plugin.showWarning = true;
+      }
+    });
+    webpackConfig.plugins.push(new DuplicatePackageCheckerPlugin())
+  }
   cb({
     type,
     media,
