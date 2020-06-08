@@ -65,7 +65,8 @@ https://github.com/darrenscerri/duplicate-package-checker-webpack-plugin#resolvi
 Webpack 3.x
 `npm install duplicate-package-checker-webpack-plugin@^2.1.0 --save-dev`
 
-[duplicate-package-checker-webpack-plugin](https://github.com/darrenscerri/duplicate-package-checker-webpack-plugin)
+
+参考：[duplicate-package-checker-webpack-plugin](https://github.com/darrenscerri/duplicate-package-checker-webpack-plugin)
 
 修改 `chameleon.config.js`
 
