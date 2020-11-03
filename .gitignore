@@ -6,7 +6,7 @@
 *.njsproj
 *.sln
 .vscode
-
+dist/
 # Logs
 logs
 *.log
